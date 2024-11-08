@@ -11,9 +11,11 @@ include(${CMAKE_SOURCE_DIR}/cmake/CompilerWarnings.cmake)
 set_choice (CMAKE_BUILD_TYPE "Debug;Release;MinSizeRel;RelWithDebInfo" "Debug" "Choose type of build")
 
 set (SRCS
+    ${CMAKE_SOURCE_DIR}/src/ChessEngine.c
 )
 
 set (HEADERS
+    ${CMAKE_SOURCE_DIR}/include/ChessEngine.h
 )
 
 set_sanitizer()
